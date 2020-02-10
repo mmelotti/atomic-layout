@@ -2,11 +2,13 @@ interface Cache {
   [key: string]: any
 }
 
-export default function memoizeWith(saltGenerator: (...args: any[]) => string) {
+export default function memoizeWith<F extends (...args: any[]) => any>(
+  saltGenerator: (...args: Parameters<F>) => string,
+) {
   const cache: Cache = {}
 
-  return (func: (...args: any[]) => any) =>
-    function(...args: any[]) {
+  return (func: F) =>
+    function(...args: Parameters<F>) {
       const key = saltGenerator(...args)
 
       if (!(key in cache)) {
