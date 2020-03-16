@@ -93,7 +93,7 @@ There are some shortcuts to get you started:
 
 ## Examples
 
-> The examples below are going to use the `atomic-layout` library based on `styled-components`. To apply these examples to other Atomic Layout packages (i.e. `@atomic-layout/styled`) install that package properly and follow _the very same example_.
+> The examples below are going to use the `atomic-layout` library based on `styled-components`. To apply these examples to other Atomic Layout packages (i.e. `@atomic-layout/styled`) install that package properly and follow _the very same example_. Atomic Layout has the same API between styling vendors.
 
 ### Basics
 
@@ -120,6 +120,22 @@ There are some shortcuts to get you started:
       </a>
       <p>Any element can be a composition <i>and</i> a composite at the same time.</p>
     </td>
+  </tr>
+</table>
+
+### Advanced
+
+<table border="0">
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://codesandbox.io/s/responsive-component-ftf46" target="_blank">
+        <img src="materials/example-thumbnails/responsive-component.jpg" alt="Responsive component" />
+        <h4>Responsive component</h4>
+      </a>
+      <p>Make any React component support the <a href="https://redd.gitbook.io/atomic-layout/fundamentals/responsive-props">Responsive props</a> declaration pattern.</p>
+    </td>
+    <td width="33%" valign="top"></td>
+    <td width="33%" valign="top"></td>
   </tr>
 </table>
 
